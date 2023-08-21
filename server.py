@@ -66,25 +66,10 @@ class MyHandler(BaseHTTPRequestHandler):
                 smtp_server.starttls()
                 smtp_server.login('serviciosEscolaresUptx0@gmail.com', 'xyyaqkhwfxbmrlih')  # Reemplaza con tu dirección de correo y contraseña
                 
-                msg = "Subject: Capacitación Docente.\n\n"\
-                      "Estimados/as docentes de la Universidad Politécnica de Tlaxcala.\n\n"\
-                      "Espero que este mensaje los encuentre bien. Como parte del equipo de Servicios Escolares, "\
-                      "me dirijo a ustedes con el más alto grado de consideración y respeto para informarles que han sido seleccionados para participar en una capacitación docente virtual, "\
-                      "programada para llevarse a cabo el 20 de Agosto del presente año.\n\n"\
-                      "Les solicitamos amablemente que se registren para esta importante capacitación accediendo al siguiente enlace: http://127.0.0.1:8080\n\n"\
-                      "El propósito de esta capacitación es brindarles una actualización en las normativas educativas que serán implementadas en el próximo ciclo escolar, así como presentar las nuevas y efectivas metodologías de enseñanza que se aplicarán en nuestras aulas.\n\n"\
-                      "La participación de cada uno/a de ustedes es de suma importancia, y su asistencia será de gran valor para el enriquecimiento de la experiencia educativa de nuestros estudiantes.\n\n"\
-                      "Sin duda alguna, su compromiso y dedicación como docentes contribuirán significativamente al continuo progreso de nuestra institución.\n\n"\
-                      "Les deseamos un excelente inicio de semana, y confiamos en contar con su grata presencia en este evento formativo y enriquecedor.\n\n"\
-                      "Agradecemos de antemano su amable disposición y colaboración en esta noble tarea de fomentar el conocimiento y el crecimiento académico en nuestra comunidad educativa.\n\n"\
-                      "Atentamente:\n"\
-                      "Lic. María del R. Orea Galicia\n"\
-                      "Teléfono de contacto: 2461200862\n"\
-                      "Correo electrónico de contacto: mariaorea@uptx.edu.mx"
+                msg = "Subject: Mensaje a la Comunidad.\n\n"\
                 msg = msg.encode('utf-8')  # Codificar el mensaje en UTF-8
                 
-                to_emails = ['renmieseas@gmail.com', 'anon.59re@gmail.com','Karenrodriguezzecua@gmail.com',
-                             'alanhernandez2829@gmail.com', 'Karenitzel11@hotmail.com',
+                to_emails = ['renmieseas@gmail.com', 'anon.59re@gmail.com',
                              'urielngulo@gmail.com','ivanojedareyes777@gmail.com']
                 smtp_server.sendmail('serviciosEscolaresUptx0@gmail.com', to_emails, msg)
                 smtp_server.quit()
