@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Servidor Emails Python</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00; 
+            font-family: monospace;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #00ff00; 
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: falling-letters 2s forwards;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+            color: #00ff00; /* Verde llamativo */
+        }
+
+        @keyframes falling-letters {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Emails Masivos de Manera Automatizada.</h1>
+    <form action="/send-email" method="post">
+        <input type="submit" value="Enviar Correo">
+    </form>
+
+</body>
+</html>
